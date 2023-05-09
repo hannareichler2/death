@@ -1,0 +1,148 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  position: absolute;
+  top: 42vh;
+  right: 50vw;
+  padding: 10px;
+  transform: translate(50%, 50%);
+  font-family: 'GT America';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+label {
+  padding: 10px;
+  position: absolute;
+  top: 45vh;
+  right: 50vw;
+  transform: translate(50%, 50%);
+  font-family: 'GT America';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button.yes-button,
+button.no-button {
+  padding: 10px 10px;
+  /* margin-right: 10px; */
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  font-family: 'GT America';
+  font-style: normal;
+  font-weight: 275;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  /* -webkit-text-stroke: 2px black;
+text-shadow:
+  -2px 0 black,
+  0 2px black,
+  2px 0 black,
+  0 -2px black,
+  -1px 1px black,
+  1px 1px black,
+  1px -1px black,
+  -1px -1px black */
+}
+
+button.yes-button {
+  position: absolute;
+  top: 50vh;
+  right: 30vw;
+  border: 1px solid #000000;
+  /* transform: translate(0, -50%); */
+}
+
+button.no-button {
+  position: absolute;
+  top: 50vh;
+  left: 30vw;
+  border: 1px dashed #000000;
+  /* transform: translate(100px, -50%); */
+}
+
+button.yes-button:hover,
+button.no-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.exhibition {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.half-circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.circle {
+  position: fixed;
+  border-radius: 50%;
+}
+
+.before-exhibition {
+  position: fixed;
+  top: 50vh;
+  right: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.before-exhibition .half-circle {
+  right: 0;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.after-exhibition {
+  position: fixed;
+  top: 50vh;
+  right: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.after-exhibition .half-circle {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
